@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed = 3f;
 
-    public Rigidbody2D rb;
+    public Rigidbody2D player;
 
     Vector2 movement;
 
@@ -16,10 +16,22 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
     } // Update
 
-    
-
     void FixedUpdate() {
-        rb.MovePosition(rb.position + movement*moveSpeed* Time.fixedDeltaTime);
+
+        Vector2 screenPositionn = Camera.main.WorldToScreenPoint(transform.position);
+
+        // borders of the screen
+        if (screenPositionn.x < 0) 
+            movement.x++;
+        else if (screenPositionn.x > Camera.main.pixelWidth)
+             movement.x--;
+        if (screenPositionn.y < 0) 
+            movement.y++;
+        else if (screenPositionn.y > Camera.main.pixelHeight)
+            movement.y--;
+
+        player.MovePosition(player.position + movement * moveSpeed * Time.fixedDeltaTime);
 
     } // FixedUpdate
-}
+
+} // PlayerMovement
