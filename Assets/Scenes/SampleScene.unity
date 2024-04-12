@@ -301,6 +301,8 @@ GameObject:
   m_Component:
   - component: {fileID: 176950825}
   - component: {fileID: 176950824}
+  - component: {fileID: 176950827}
+  - component: {fileID: 176950828}
   m_Layer: 0
   m_Name: fountain
   m_TagString: Untagged
@@ -375,6 +377,69 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &176950827
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176950823}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &176950828
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176950823}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.50646, y: 0.19961242}
+    oldSize: {x: 10, y: 10}
+    newSize: {x: 10, y: 10}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.443534, y: -0.0678505}
+      - {x: 1.0468462, y: -0.014297545}
+      - {x: -1.0937191, y: -0.032201678}
+      - {x: -2.356683, y: -0.12623626}
+      - {x: -3.6859996, y: -0.40882778}
+      - {x: -4.062631, y: -0.5836601}
+      - {x: -3.7505643, y: -0.8921723}
+      - {x: -3.0515428, y: -1.1979107}
+      - {x: -2.152378, y: -1.3996832}
+      - {x: -1.3573608, y: -1.4954439}
+      - {x: 1.2344624, y: -1.4980592}
+      - {x: 2.033426, y: -1.3880613}
+      - {x: 2.531381, y: -1.2920114}
+      - {x: 3.226823, y: -1.0938758}
+      - {x: 3.6327202, y: -0.8920796}
+      - {x: 3.9356678, y: -0.5927377}
+      - {x: 3.5288918, y: -0.3463593}
 --- !u!1 &204039232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,6 +1386,7 @@ GameObject:
   - component: {fileID: 2063497041}
   - component: {fileID: 2063497040}
   - component: {fileID: 2063497039}
+  - component: {fileID: 2063497042}
   m_Layer: 0
   m_Name: stand
   m_TagString: Untagged
@@ -1451,6 +1517,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &2063497042
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063497038}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2070909966
 GameObject:
   m_ObjectHideFlags: 0
