@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/LoadingScene.unity
     guid: a9bb09a0bf0c047f8af38e2cbc91dbf6
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainPomi.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FallingTomatoes.unity
     guid: a853e8bf1db7f4744ac867172d49807d
   m_configObjects: {}
