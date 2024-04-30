@@ -1225,6 +1225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969a8602773e747e78d342e19dd3ac4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactIcon: {fileID: 0}
   moveSpeed: 3
   player: {fileID: 233280741}
   animator: {fileID: 233280742}
@@ -6523,7 +6524,7 @@ GameObject:
   - component: {fileID: 3995126147708787674}
   - component: {fileID: 3995126147708787675}
   - component: {fileID: 1333139853990243420}
-  - component: {fileID: 6874588716395096486}
+  - component: {fileID: 3995126147708787676}
   m_Layer: 0
   m_Name: fence H (5)
   m_TagString: Untagged
@@ -6599,8 +6600,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 2
   m_SpriteSortPoint: 1
---- !u!61 &6874588716395096486
-BoxCollider2D:
+--- !u!60 &3995126147708787676
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6612,7 +6613,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.27, y: 0.01}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.4967701, y: 0.017810931}
@@ -6622,9 +6623,12 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.53, y: 0.05}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -1.0350142, y: 0.0349572}
+      - {x: -1.0350933, y: -0.014918685}
+      - {x: 0.4951917, y: -0.014977217}
+      - {x: 0.49499178, y: 0.03499502}
 --- !u!1001 &7645876435851017031
 PrefabInstance:
   m_ObjectHideFlags: 0
