@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     public GameObject interactIcon;
+    private Vector2 rayBox = new Vector2(0.1f, 1f);
     public float moveSpeed = 3f;
 
     public Rigidbody2D player;
@@ -55,7 +56,15 @@ public class PlayerControl : MonoBehaviour
     }
 
     private void CheckInteraction(){
-
+        RaycastHit2D[] hits = Physics2D.BoxCastAll(player.position, rayBox, 0, Vector2.zero);
+        if(hits.Length > 0){
+            foreach(RaycastHit2D rc in hits){
+                if(rc.transform.GetComponent<Interactable>()){
+                    rc.transform.GetComponent<Interactable>().Interact();
+                    return;
+                }
+            }
+        }
     }
 
 } // PlayerMovement
