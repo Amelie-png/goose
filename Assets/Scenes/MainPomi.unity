@@ -2442,7 +2442,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ah Hamlet Please Stop
+  m_text: blah blah blah
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 09a2984c1412044f5b095e5df593f862, type: 2}
   m_sharedMaterial: {fileID: -588956473709912132, guid: 09a2984c1412044f5b095e5df593f862, type: 2}
