@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Quackst : ScriptableObject
 {
@@ -23,6 +24,8 @@ public class Quackst : ScriptableObject
 
     [Header("Reward")] public Gift reward = new Gift { giftInfo = "This is a gift." };
 
+    public bool completed { get; protected set; }
+
     public abstract class QuackstGoal : ScriptableObject
     {
         protected string description;
@@ -38,7 +41,7 @@ public class Quackst : ScriptableObject
     public List<QuackstGoal> goals;
 }
 
-public class QuackstCompletedEvent : UnityEven
+public class QuackstCompletedEvent : UnityEvent<Quackst>
 {
 
 }
