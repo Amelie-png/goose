@@ -31,8 +31,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8df4159641744d04bf1c12a41abe048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredAmount: 1
+  requiredAmount: 4
   goalCompleted:
     m_PersistentCalls:
       m_Calls: []
-  Tomato: 4
+  Tomato: Blood tomato
