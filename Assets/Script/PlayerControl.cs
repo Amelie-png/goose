@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
-    public GameObject interactIcon;
+    public GameObject interactIcon; 
     private Vector2 rayBox = new Vector2(0.1f, 1f);
     public float moveSpeed = 3f;
 
@@ -14,12 +14,12 @@ public class PlayerControl : MonoBehaviour
     Vector2 movement;
     void Start(){
         interactIcon.SetActive(false);
-    }
+    } // Start
     // Update is called once per frame
     void Update() {
         if(Input.GetKeyDown(KeyCode.Z)){
             CheckInteraction();
-        }
+        } // if
 
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
@@ -30,7 +30,6 @@ public class PlayerControl : MonoBehaviour
     } // Update
 
     void FixedUpdate() {
-
         Vector2 screenPositionn = Camera.main.WorldToScreenPoint(transform.position);
 
         // borders of the screen
@@ -49,22 +48,22 @@ public class PlayerControl : MonoBehaviour
 
     public void OpenInteractableIcon(){
         interactIcon.SetActive(true);
-    }
+    } // OpenInteractableIcon
 
     public void CloseInteractableIcon(){
         interactIcon.SetActive(false);
-    }
+    } // CloseInteractableIcon
 
-    private void CheckInteraction(){
+    private void CheckInteraction() { 
         RaycastHit2D[] hits = Physics2D.BoxCastAll(player.position, rayBox, 0, Vector2.zero);
         if(hits.Length > 0){
             foreach(RaycastHit2D rc in hits){
                 if(rc.transform.GetComponent<Interactable>()){
                     rc.transform.GetComponent<Interactable>().Interact();
                     return;
-                }
-            }
-        }
-    }
+                } // if
+            } // foreach 
+        } // if
+    } // CheckInteraction
 
 } // PlayerMovement

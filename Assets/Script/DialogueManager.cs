@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
-public class DialogueManager : MonoBehaviour
-{
+public class DialogueManager : MonoBehaviour {
     public TMP_Text nameText;
     public TMP_Text dialogueText;
 
     public Animator animator;
 
-    private Queue<string> sentences;
+    private Queue<string> sentences; // fifo -- first in first out 
+
     // Start is called before the first frame update
     void Start() {
         sentences = new Queue<string>();
@@ -47,9 +47,19 @@ public class DialogueManager : MonoBehaviour
         } // if
 
         string sentence = sentences.Dequeue();
-        dialogueText.text = sentence;
 
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence)); // starting parallel task
     }// DisplayNextSentence
+
+    IEnumerator TypeSentence(string sentence) {
+        dialogueText.text = "";
+        foreach(char letter in sentence.ToCharArray()) {
+            dialogueText.text += letter;
+            yield return null; // skip frame (time dilation)
+            yield return null; // skip frame (time dilation)
+        } // foreach
+    }// TypeSentence
 
     void EndDialogue() {
         animator.SetBool("isOpen", false);

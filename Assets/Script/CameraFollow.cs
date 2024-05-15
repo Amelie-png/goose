@@ -14,7 +14,7 @@ public class CameraFollow : MonoBehaviour
             y = t;
 
         t = target.position.x;
-        if (t < 3.05 && t > -3.05)
+        if (t < 3.073 && t > -3.073)
             x = t;
                                                     
         transform.position = new Vector3(x, y, -1);
