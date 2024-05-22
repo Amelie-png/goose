@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: testQuackst
   m_EditorClassIdentifier: 
   information:
-    name: Tomato Kingdom
+    name: mato Kingdomom
     description: I colonize earth.
   reward:
     giftInfo: This is a gift.
