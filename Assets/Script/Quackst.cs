@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class Quackst : ScriptableObject {
-    //Quackst = list of goals, goals have a progress check
+    //Quackst = list of goals, goals have a progress check.
     //A quackst is complete when all goals are complete
 
     [System.Serializable]
