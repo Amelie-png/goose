@@ -7,9 +7,11 @@ public class PlayerControl : MonoBehaviour
     public GameObject interactIcon; 
     private Vector2 rayBox = new Vector2(0.1f, 1f);
     public float moveSpeed = 3f;
+    public bool isPaused = false;
 
     public Rigidbody2D player;
     public Animator animator;
+    public QuackstManager quackstManager;
 
     Vector2 movement;
     void Start(){
@@ -21,6 +23,13 @@ public class PlayerControl : MonoBehaviour
             CheckInteraction();
         } // if
 
+        if (Input.GetKeyDown(KeyCode.Q)) {
+            isPaused = !isPaused;
+            quackstManager.StartQuackst();
+        } // if
+
+        if (isPaused) return;
+        
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
