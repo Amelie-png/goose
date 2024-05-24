@@ -1161,7 +1161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2bf83d01c3e14f63864fb0620ee05a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 2147275440}
 --- !u!1001 &166095917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1621,6 +1621,7 @@ MonoBehaviour:
   isPaused: 0
   player: {fileID: 233280741}
   animator: {fileID: 233280742}
+  quackstManager: {fileID: 148233329}
 --- !u!212 &233280739
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5319,7 +5320,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.4935401, y: 0.04050999}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.8, y: 2.48}
     newSize: {x: 1.8, y: 2.48}
     adaptiveTilingThreshold: 0.5
@@ -5384,7 +5385,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.4935401, y: 0.04050999}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.8, y: 2.48}
     newSize: {x: 1.8, y: 2.48}
     adaptiveTilingThreshold: 0.5
@@ -6172,7 +6173,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.4083063, y: 0.059870552}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.76, y: 3.4}
     newSize: {x: 1.76, y: 3.4}
     adaptiveTilingThreshold: 0.5
@@ -6205,7 +6206,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.4083063, y: 0.059870552}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.76, y: 3.4}
     newSize: {x: 1.76, y: 3.4}
     adaptiveTilingThreshold: 0.5
@@ -6269,7 +6270,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.4083063, y: 0.059870552}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.76, y: 3.4}
     newSize: {x: 1.76, y: 3.4}
     adaptiveTilingThreshold: 0.5
@@ -7085,7 +7086,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.47739017, y: 0.04637643}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.44, y: 1.72}
     newSize: {x: 2.44, y: 1.72}
     adaptiveTilingThreshold: 0.5
@@ -7150,7 +7151,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.47739017, y: 0.04637643}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.44, y: 1.72}
     newSize: {x: 2.44, y: 1.72}
     adaptiveTilingThreshold: 0.5
@@ -10051,7 +10052,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 1
   m_colorMode: 3
