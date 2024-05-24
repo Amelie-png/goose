@@ -23,9 +23,10 @@ public class PlayerControl : MonoBehaviour
             CheckInteraction();
         } // if
 
-        if (Input.GetKeyDown(KeyCode.Q)) {
+        if (Input.GetKeyDown(KeyCode.E)) {
             isPaused = !isPaused;
-            quackstManager.StartQuackst();
+            if (isPaused) quackstManager.StartQuackst();
+            else quackstManager.EndQuackst();
         } // if
 
         if (isPaused) return;
