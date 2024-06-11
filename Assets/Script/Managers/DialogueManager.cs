@@ -8,6 +8,7 @@ using TMPro;
 public class DialogueManager : MonoBehaviour {
     public TMP_Text nameText;
     public TMP_Text dialogueText;
+    public Image characterImage;
 
     public Animator animator;
 
@@ -23,6 +24,8 @@ public class DialogueManager : MonoBehaviour {
 
         Debug.Log("Starting conversation with " + dialogue.character);
         nameText.text = dialogue.character;
+        characterImage.sprite = dialogue.sprite;
+
 
         sentences.Clear();
 

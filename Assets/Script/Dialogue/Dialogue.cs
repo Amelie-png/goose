@@ -7,4 +7,5 @@ public class Dialogue {
 
     public string character;
     public string[] sentences;
+    public Sprite sprite;
 } // Dialogue
