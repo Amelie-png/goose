@@ -11687,10 +11687,10 @@ MonoBehaviour:
       sprite: {fileID: 21300000, guid: ba0c84f53d55741488e4205e58958b45, type: 3}
       speech: I see.
     - character: Red Bob
-      sprite: {fileID: 21300000, guid: ba0c84f53d55741488e4205e58958b45, type: 3}
+      sprite: {fileID: 21300000, guid: a8954733621184e778e4feb1fe43cbca, type: 3}
       speech: Red Bob is rich now.
     - character: Red Bob
-      sprite: {fileID: 21300000, guid: ba0c84f53d55741488e4205e58958b45, type: 3}
+      sprite: {fileID: 21300000, guid: a8954733621184e778e4feb1fe43cbca, type: 3}
       speech: You may leave.
 --- !u!1 &2059127607
 GameObject:
