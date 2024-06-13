@@ -1444,7 +1444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 153436822}
   - component: {fileID: 153436823}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Road1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3351,7 +3351,7 @@ GameObject:
   m_Component:
   - component: {fileID: 511098419}
   - component: {fileID: 511098420}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3538,7 +3538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 540554342}
   - component: {fileID: 540554343}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: MinimapDorospital
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4763,7 +4763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 781471788}
   - component: {fileID: 781471789}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: MinimapPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6037,7 +6037,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 136
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 888bd49bb13ef4fe2bd54cc123838dff, type: 2}
   m_TargetDisplay: 0
@@ -7069,7 +7069,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1127744209}
   - component: {fileID: 1127744210}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7587,7 +7587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1236187439}
   - component: {fileID: 1236187440}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: MinimapPolice-hut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8139,7 +8139,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1334578605}
   - component: {fileID: 1334578606}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Road2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8298,7 +8298,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1372078118}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: MinimapRoads
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8448,7 +8448,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1433833957}
   - component: {fileID: 1433833958}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: MinimapTaco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9201,7 +9201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1568716467}
   - component: {fileID: 1568716468}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: MinimapCrops
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9485,7 +9485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1627965980}
   - component: {fileID: 1627965981}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: MinimaPrestaurantDay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9915,7 +9915,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1746187180}
   - component: {fileID: 1746187181}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10618,7 +10618,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1836862347}
   - component: {fileID: 1836862348}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10702,7 +10702,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1841243132}
   - component: {fileID: 1841243131}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Minimap GFX
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -10871,7 +10871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1850866195}
   - component: {fileID: 1850866196}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12450,7 +12450,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2075870236}
   - component: {fileID: 2075870237}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Circle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
