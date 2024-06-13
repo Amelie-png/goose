@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms;
 
 [RequireComponent(typeof(SpriteRenderer))]
-public class GooseTalking : Interactable {
+public class Talking : Interactable {
 
     public DialogueTrigger dialogueTrigger;
 
     public override void Interact() {
         dialogueTrigger.TriggerDialogue();
     } // Interact
-} // GooseTalking
+} // Talking

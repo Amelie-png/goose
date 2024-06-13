@@ -12,24 +12,22 @@ public class DialogueManager : MonoBehaviour {
 
     public Animator animator;
 
-    private Queue<string> sentences; // fifo -- first in first out 
+    private Queue<Line> sentences; // fifo -- first in first out 
 
     // Start is called before the first frame update
     void Start() {
-        sentences = new Queue<string>();
+        sentences = new Queue<Line>();
     } // Start
 
     public void StartDialogue(Dialogue dialogue) {
         animator.SetBool("isOpen", true);
 
-        Debug.Log("Starting conversation with " + dialogue.character);
-        nameText.text = dialogue.character;
-        characterImage.sprite = dialogue.sprite;
+
 
 
         sentences.Clear();
 
-        foreach (string sentence in dialogue.sentences) {
+        foreach (Line sentence in dialogue.sentences) {
             sentences.Enqueue(sentence);
         }// foreach
 
@@ -49,15 +47,19 @@ public class DialogueManager : MonoBehaviour {
             return;
         } // if
 
-        string sentence = sentences.Dequeue();
+
+        Line sentence = sentences.Dequeue();
 
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence)); // starting parallel task
     }// DisplayNextSentence
 
-    IEnumerator TypeSentence(string sentence) {
+    IEnumerator TypeSentence(Line sentence) {
         dialogueText.text = "";
-        foreach(char letter in sentence.ToCharArray()) {
+        nameText.text = sentence.character;
+        characterImage.sprite = sentence.sprite;
+
+        foreach (char letter in sentence.speech.ToCharArray()) {
             dialogueText.text += letter;
             yield return null; // skip frame (time dilation)
             yield return null; // skip frame (time dilation)
