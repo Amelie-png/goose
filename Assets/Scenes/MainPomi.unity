@@ -619,8 +619,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1343456591}
   m_HandleRect: {fileID: 1343456590}
   m_Direction: 2
-  m_Value: 1.3991219
-  m_Size: 0.3047273
+  m_Value: 2.1875174
+  m_Size: 0.30472732
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2605,6 +2605,8 @@ GameObject:
   - component: {fileID: 369445265}
   - component: {fileID: 369445264}
   - component: {fileID: 369445263}
+  - component: {fileID: 369445267}
+  - component: {fileID: 369445266}
   m_Layer: 0
   m_Name: ahps
   m_TagString: Untagged
@@ -2890,6 +2892,42 @@ PolygonCollider2D:
       - {x: -1.7568731, y: 2.2326617}
       - {x: -1.7568731, y: 2.1426618}
       - {x: -1.9468731, y: 2.1426618}
+--- !u!114 &369445266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369445260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e93641b9ef6ce467fb4ebd40acb6cbb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueTrigger: {fileID: 369445267}
+--- !u!114 &369445267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369445260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8230c8b1070e94f1ea41d5c296010f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - character: AHPS
+      sprite: {fileID: 21300000, guid: 8c170d7b7211649a1bc1ac0dccc22778, type: 3}
+      speech: One can only imagine a school filled with students.
+    - character: AHPS
+      sprite: {fileID: 21300000, guid: 8c170d7b7211649a1bc1ac0dccc22778, type: 3}
+      speech: Ah! You can see them in the box.
+    - character: AHPS
+      sprite: {fileID: 21300000, guid: 8c170d7b7211649a1bc1ac0dccc22778, type: 3}
+      speech: 'They are saying: "Ah Hamlet Please Stop!"'
 --- !u!1001 &393342752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3626,6 +3664,9 @@ GameObject:
   - component: {fileID: 547004777}
   - component: {fileID: 547004779}
   - component: {fileID: 547004780}
+  - component: {fileID: 547004783}
+  - component: {fileID: 547004782}
+  - component: {fileID: 547004781}
   m_Layer: 0
   m_Name: pool
   m_TagString: Untagged
@@ -3776,6 +3817,71 @@ PolygonCollider2D:
       - {x: 3.0303288, y: -0.30414915}
       - {x: 2.788969, y: 0.30912638}
       - {x: 2.5675156, y: 0.75242054}
+--- !u!114 &547004781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547004776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8230c8b1070e94f1ea41d5c296010f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - character: Pool
+      sprite: {fileID: 21300000, guid: 373acd625a36f4dd5bf2ea907386f3ee, type: 3}
+      speech: This pool is filled with Blue Fluorescent Liquid.
+    - character: Pool
+      sprite: {fileID: 21300000, guid: 373acd625a36f4dd5bf2ea907386f3ee, type: 3}
+      speech: There is slight electricity.
+    - character: Pool
+      sprite: {fileID: 21300000, guid: 373acd625a36f4dd5bf2ea907386f3ee, type: 3}
+      speech: It is safe. Maybe.
+--- !u!114 &547004782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547004776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e93641b9ef6ce467fb4ebd40acb6cbb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueTrigger: {fileID: 547004781}
+--- !u!60 &547004783
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547004776}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.56, y: 3.9}
+    newSize: {x: 8, y: 8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -3.28, y: 1.9499999}
+      - {x: -3.28, y: -1.9499999}
+      - {x: 3.28, y: -1.9499999}
+      - {x: 3.28, y: 1.9499999}
 --- !u!1 &610036393
 GameObject:
   m_ObjectHideFlags: 0
@@ -5134,6 +5240,9 @@ GameObject:
   - component: {fileID: 848260993}
   - component: {fileID: 848260996}
   - component: {fileID: 848260995}
+  - component: {fileID: 848260999}
+  - component: {fileID: 848260998}
+  - component: {fileID: 848260997}
   m_Layer: 0
   m_Name: police-hut
   m_TagString: Untagged
@@ -5261,6 +5370,104 @@ PolygonCollider2D:
       - {x: -1.24, y: -0.91}
       - {x: -1.24, y: -1.2}
       - {x: -1.06, y: -1.38}
+--- !u!114 &848260997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848260992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8230c8b1070e94f1ea41d5c296010f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - character: Pohihice Station
+      sprite: {fileID: 21300000, guid: 913e25c1ce3da4801b1ef9ef9175f9a0, type: 3}
+      speech: A very shabby hut, owned by Amino and Acid.
+    - character: Pohihice Station
+      sprite: {fileID: 21300000, guid: 913e25c1ce3da4801b1ef9ef9175f9a0, type: 3}
+      speech: They never set foot in it.
+--- !u!114 &848260998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848260992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e93641b9ef6ce467fb4ebd40acb6cbb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueTrigger: {fileID: 848260997}
+--- !u!60 &848260999
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848260992}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.50323, y: 0.15434597}
+    oldSize: {x: 2.84, y: 2.76}
+    newSize: {x: 2.84, y: 2.76}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.34917313, y: -0.42599487}
+      - {x: 0.34082687, y: -0.42599487}
+      - {x: 0.59082687, y: -0.25599486}
+      - {x: 0.61082685, y: -0.23599486}
+      - {x: 0.79082686, y: -0.28599486}
+      - {x: 0.84082687, y: -0.42599487}
+      - {x: 1.0708269, y: -0.42599487}
+      - {x: 1.2508268, y: -0.23599486}
+      - {x: 1.2808268, y: 0.9940051}
+      - {x: 1.3408269, y: 1.2040051}
+      - {x: 1.4108268, y: 1.2940052}
+      - {x: 1.4108268, y: 1.4340051}
+      - {x: 1.2808268, y: 1.4340051}
+      - {x: 1.3108269, y: 1.674005}
+      - {x: 0.98082685, y: 1.7240051}
+      - {x: 0.88082683, y: 1.8240051}
+      - {x: 0.61082685, y: 2.0040052}
+      - {x: 0.32082686, y: 2.184005}
+      - {x: 0.07082687, y: 2.334005}
+      - {x: -0.08917312, y: 2.334005}
+      - {x: -0.18917312, y: 2.2640052}
+      - {x: -0.4391731, y: 2.114005}
+      - {x: -0.6191731, y: 2.0040052}
+      - {x: -0.7091731, y: 1.914005}
+      - {x: -0.8891731, y: 1.8240051}
+      - {x: -0.9791731, y: 1.7240051}
+      - {x: -1.1591731, y: 1.7140051}
+      - {x: -1.2891731, y: 1.5540051}
+      - {x: -1.4291731, y: 1.4340051}
+      - {x: -1.4291731, y: 1.2940052}
+      - {x: -1.379173, y: 1.2140051}
+      - {x: -1.2791731, y: 1.1840051}
+      - {x: -1.2691731, y: -0.23599486}
+      - {x: -1.249173, y: -0.25599486}
+      - {x: -1.1491731, y: -0.26599488}
+      - {x: -1.0891731, y: -0.42599487}
+      - {x: -0.8591731, y: -0.42599487}
+      - {x: -0.7591731, y: -0.31599486}
+      - {x: -0.4891731, y: -0.35599485}
+      - {x: -0.35917312, y: -0.27599487}
 --- !u!4 &852029199 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9211513347693630189, guid: 423eb55dad99c4ddd990012f45b13c43, type: 3}
@@ -10272,7 +10479,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -20, y: -549.124}
+  m_AnchoredPosition: {x: -20, y: -1633.8223}
   m_SizeDelta: {x: 6.8582, y: 1978.8353}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1767281216
@@ -11152,19 +11359,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - character: Goose
+    - character: Ghost of King Goose
       sprite: {fileID: 21300000, guid: 2244085805ff04b39a285ea56d07559c, type: 3}
       speech: You see...
-    - character: Goose
+    - character: Ghost of King Goose
       sprite: {fileID: 21300000, guid: 2244085805ff04b39a285ea56d07559c, type: 3}
       speech: This game  is no where near done.
-    - character: Goose
+    - character: Ghost of King Goose
       sprite: {fileID: 21300000, guid: 2244085805ff04b39a285ea56d07559c, type: 3}
       speech: But the people need SOMETHING...
-    - character: Goose
+    - character: Ghost of King Goose
       sprite: {fileID: 21300000, guid: 2244085805ff04b39a285ea56d07559c, type: 3}
       speech: So go talk to Red Bob.
-    - character: Goose
+    - character: Ghost of King Goose
       sprite: {fileID: 21300000, guid: 2244085805ff04b39a285ea56d07559c, type: 3}
       speech: He will give you something. I hope.
 --- !u!212 &1875156412
